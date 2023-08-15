@@ -1,38 +1,195 @@
-.App {
+.company-name-light {
   text-align: center;
+  font-family: IBM Plex Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-shadow:
+    -1px -1px 0 #66fcf1,
+    /* Top-left */ 1px -1px 0 #66fcf1,
+    /* Top-right */ -1px 1px 0 #66fcf1,
+    /* Bottom-left */ 1px 1px 0 #66fcf1; /* Bottom-right */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.company-name-dark {
+  text-align: center;
+  font-family: IBM Plex Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-shadow:
+    -1px -1px 0 #202833,
+    /* Top-left */ 1px -1px 0 #202833,
+    /* Top-right */ -1px 1px 0 #202833,
+    /* Bottom-left */ 1px 1px 0 #202833; /* Bottom-right */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.check-text {
+  color: #202833;
+  /* Medium Descriptor / IBM Plex Sans Regular */
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-field {
+  padding: 12px;
+  align-self: stretch;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.transparent-bg {
+  background-color: rgba(102, 252, 241, 0.9); /* Using rgba() with your color and opacity */
 }
 
-@keyframes App-logo-spin {
-  from {
+.form-title {
+  color: #202833;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.form-button-text {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bblue-title {
+  color: #66fcf1;
+  font-family: IBM Plex Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px; /* 105% */
+  letter-spacing: 0.1px;
+}
+
+.dblue-title {
+  color: #202833;
+  font-family: IBM Plex Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px; /* 105% */
+  letter-spacing: 0.1px;
+}
+
+.side-heading {
+  color: var(--white, #fff);
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+}
+
+.side-bottom-text {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+
+.contacts-text {
+  color: #202833;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.copywrite-text {
+  color: #202833;
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .company-name-light {
+    font-size: 32px;
+  }
+  .company-name-dark {
+    font-size: 32px;
+  }
+  .check-text {
+    font-size: 12px;
+  }
+  .input-field {
+    padding: 8px;
+  }
+  .form-title {
+    font-size: 20px;
+  }
+  .bblue-title {
+    font-size: 32px;
+  }
+  .dblue-title {
+    font-size: 32px;
+  }
+  .side-heading {
+    font-size: 16px;
+  }
+  .side-bottom-text {
+    font-size: 12px;
+  }
+  .contacts-text {
+    font-size: 16px;
+  }
+  .copywrite-text {
+    font-size: 12px;
+  }
+  .form-button-text {
+    font-size: 20px;
+  }
+}
+
