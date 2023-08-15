@@ -186,7 +186,6 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
-    setAlert(true);
     if (validateForm()) {
       setLoader(true);
       // Send the form data to the server
@@ -230,7 +229,7 @@ function App() {
         console.error('Error:', error);
       });
       */
-
+      setLoader(false);
       console.log("Form submitted!");
     } else {
       console.log("Form not submitted!");
